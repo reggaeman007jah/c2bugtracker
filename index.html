@@ -32,9 +32,11 @@
 			<div id="wrapper">
 
 				<!-- Intro -->
+				<!-- https://discord.gg/RmmuWP -->
 					<section id="intro" class="wrapper style1 fullscreen fade-up">
 						<div class="inner">
 							<h1>Welcome</h1>
+							<span class="icon major fas fa-bug"></span>
 							<p>Welcome to the C2 Bug Reporting System</p>
 							<p>The purpose of this site is simply to enable C2 users to report bugs or issues with the mod</p>
 
@@ -54,7 +56,6 @@
 									<p>Games like ArmA 3 are great for modding, however sometimes having too many mods running concurrently can cause unexpected results</p>
 									<p>Where possible, try to minimise your mod-profile before submitting a report, as this helps narrow down the cause of any issues</p>
 									<ul class="actions">
-										<li><a href="generic.html" class="button">Learn more</a></li>
 									</ul>
 								</div>
 							</div>
@@ -65,9 +66,8 @@
 								<div class="inner">
 									<h2>This is .. BETA</h2>
 									<p>Currently all development efforts are focussed on the beta edition of C2. Beta users should be prepared for an imperfect product, by the very nature of it being in a Beta Dev Stage.</p>
-									<p>While best efforts are always made to deliver a great user experience, your patience is appreciated while issues are investigated</p>
+									<p>Best efforts are always made to deliver a great user experience and your patience is appreciated while issues are investigated</p>
 									<ul class="actions">
-										<li><a href="generic.html" class="button">Learn more</a></li>
 									</ul>
 								</div>
 							</div>
@@ -79,7 +79,6 @@
 									<h2>Stay current</h2>
 									<p>If you are part of the C2 Beta Community, it is always worth ensuring you are on the very latest build, especially when reporting issues - it may well have already been fixed ;)</p>
 									<ul class="actions">
-										<li><a href="generic.html" class="button">Learn more</a></li>
 									</ul>
 								</div>
 							</div>
@@ -93,12 +92,15 @@
 							<p>Any intel about breakages or problems is always gratefully received. Here are some tips to help us get to the root-cause as quickly as possible</p>
 							<div class="features">
 								<section>
-									<span class="icon major fa-code"></span>
+									<!-- <span class="icon major fa-code"></span>  -->
+									<span class="icon major fa-clipboard"></span>
+							
 									<h3>Complete the form as best you can</h3>
-									<p>We know it can be a pain, but honestly the more succinct detail you can provide, the better our chances are of understanding, tracking and then illiminating the offending code</p>
+									<p>We know it can be a bit of a pain, but honestly the more succinct detail you can provide, the better our chances are of understanding, tracking and then 'neutralising' the relevant code</p>
 								</section>
 								<section>
-									<span class="icon major fa-lock"></span>
+									<!-- <span class="icon major fa-lock"></span> -->
+									<span class="icon major fas fa-microscope"></span>
 									<h3>Test against a bare-bones mod-list</h3>
 									<p>I know we said it above, but we'll say it again, please ensure that (where possible) you report bugs that have been found when using *just C2 and CBA* - ruling out mod-clash can save a lot of time all round</p>
 								</section>
@@ -109,11 +111,14 @@
 								</section>
 								<section>
 									<span class="icon major fa-desktop"></span>
+
 									<h3>Be as clear as you can in your report</h3>
 									<p>We have provided a form (below) that we think enable sthe best chance of hunting down pesky bugs. While not all fields are mandatory, completing the form as best you can will really improve our changes of tracking down the error</p>
 								</section>
 								<section>
-									<span class="icon major fa-chain"></span>
+									<!-- <span class="icon major fa-chain"></span> -->
+									<span class="icon major fas fa-camera"></span>
+
 									<h3>Include a screenshot or video link</h3>
 									<p>Using images to demonstrate an error or behaviour can be very useful, and ideally this should be (if possible) in a single image</p>
 								</section>
@@ -143,7 +148,8 @@
 												<label for="name">Discord User Name</label>
 												<input 	type="text" 
 																name="name" 
-																id="name" />
+																id="name"
+																required />
 											</div>
 											
 											<div class="field">
@@ -151,7 +157,8 @@
 												<textarea 	name="summary" 
 																		id="summary" 
 																		rows="1"
-																		placeholder="Try to summarise the issue here"></textarea>
+																		placeholder="Please summarise the issue here"
+																		required></textarea>
 											</div>
 
 											<div class="field half">
@@ -159,7 +166,8 @@
 												<textarea 	name="version" 
 																		id="version" 
 																		rows="1"
-																		placeholder="e.g. Vanilla, Beta 1.x"></textarea>
+																		placeholder="e.g. Vanilla, Beta 1.x"
+																		required></textarea>
 											</div>
 
 											<div class="field half">
@@ -167,7 +175,8 @@
 												<textarea 	name="environment" 
 																		id="environment" 
 																		rows="1"
-																		placeholder="e.g. SP MP Dedi"></textarea>
+																		placeholder="e.g. SP MP Dedi"
+																		required></textarea>
 											</div>
 
 											<div class="field">
@@ -175,7 +184,8 @@
 													<textarea 	name="mods" 
 																			id="mods" 
 																			rows="1"
-																			placeholder="List mods used at the time"></textarea>
+																			placeholder="List mods used at the time"
+																			required></textarea>
 											</div>
 
 											<div class="field">
@@ -183,7 +193,8 @@
 												<textarea 	name="detail" 
 																		id="detail" 
 																		rows="5"
-																		placeholder="Add as much detail as possible here"></textarea>
+																		placeholder="Add as much detail as possible here"
+																		required></textarea>
 											</div>
 
 											<div class="field">
@@ -194,6 +205,14 @@
 																		placeholder="Document any steps we can follow to reproduce the issue"></textarea>
 											</div>
 											
+											<div class="field">
+													<label for="message">Video URL</label>
+													<textarea 	name="video" 
+																			id="video" 
+																			rows="1"
+																			placeholder="Paste a video link here if you have one"></textarea>
+											</div>
+
 											<div class="field">
 													<input 
 														type="file" 
