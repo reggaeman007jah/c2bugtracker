@@ -144,6 +144,15 @@
 																required />
 											</div>
 											
+											<div class="field half">
+													<label for="message">C2 Version*</label>
+													<textarea 			name="version" 
+																					id="version" 
+																					rows="1"
+																					placeholder="e.g. Vanilla, Beta 1.x"
+																					required></textarea>
+												</div>
+
 											<div class="field">
 												<label for="message">Summary description of the issue*</label>
 												<textarea 	name="summary" 
@@ -153,56 +162,46 @@
 																		required></textarea>
 											</div>
 
-											<div class="field half">
-												<label for="message">C2 Version*</label>
-												<textarea 			name="version" 
-																				id="version" 
-																				rows="1"
-																				placeholder="e.g. Vanilla, Beta 1.x"
-																				required></textarea>
-											</div>
+											<div 							class="field half col-4 col-12-small">
+													<input 					type="radio" 
+																					id="demo-priority-low" 
+																					name="demo-priority" 
+																					required
+																					checked>
+													<label 					for="demo-priority-low">Single Player</label>
+												</div>
+												<div 							class="field half col-4 col-12-small">
+													<input 					type="radio" 
+																					id="demo-priority-normal" 
+																					name="demo-priority">
+													<label 					for="demo-priority-normal">Multiplayer</label>
+												</div>
+												<div 							class="field half col-4 col-12-small">
+													<input 					type="radio" 
+																					id="demo-priority-high" 
+																					name="demo-priority">
+													<label 					for="demo-priority-high">Dedicated Server</label>
+												</div>
+												<div 							class="field half col-4 col-12-small">
+													<input 					type="radio" 
+																					id="demo-priority-vhigh" 
+																					name="demo-priority">
+													<label 					for="demo-priority-vhigh">Mission Editor</label>
+												</div>
 
-											<div class="field half">
-												<label for="message">Environment*</label>
-												<!--
-												<textarea 	name="environment" 
-																		id="environment" 
-																		rows="1"
-																		placeholder="e.g. SP MP Dedi"
-																		required></textarea>-->
-											</div>
+										
 
-											<div 							class="field half col-4 col-12-small">
-												<input 					type="radio" 
-																				id="demo-priority-low" 
-																				name="demo-priority" 
-																				checked>
-												<label 					for="demo-priority-low">SP</label>
-											</div>
-											<div 							class="field half col-4 col-12-small">
-												<input 					type="radio" 
-																				id="demo-priority-normal" 
-																				name="demo-priority">
-												<label 					for="demo-priority-normal">MP</label>
-											</div>
-											<div 							class="field half col-4 col-12-small">
-												<input 					type="radio" 
-																				id="demo-priority-high" 
-																				name="demo-priority">
-												<label 					for="demo-priority-high">Dedi</label>
-											</div>
-											<div 							class="field half col-4 col-12-small">
-												<input 					type="radio" 
-																				id="demo-priority-vhigh" 
-																				name="demo-priority">
-												<label 					for="demo-priority-vhigh">Editor</label>
-											</div>
+
+											
+											
 
 											<div class="field">
-												<label for="message">List Mods Used*</label>
-												<textarea name="mods" id="mods" rows="1" placeholder="List mods used" required>
-												</textarea>
+												<label for="message">List mods used</label>
+												<textarea name="modz" id="modz" rows="2" placeholder="mods used at the time of the error" required
+												></textarea>
 											</div>
+
+											
 
 											<div class="field">
 												<label for="message">Full Description*</label>
